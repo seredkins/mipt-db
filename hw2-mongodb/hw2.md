@@ -1,5 +1,5 @@
 1. **Создание базы данных и коллекции**
-```json
+```
 test> use mipt_db_hw2
 switched to db mipt_db_hw2
 
@@ -164,7 +164,7 @@ mipt_db_hw2> mean_exec_time / 10000
 <br>
 
 7. **Добавление и удаление индекса, производительность запросов к индексированной коллекции**
-```json
+```
 mipt_db_hw2> db.customers.createIndex({Age : 1})
 Age_1
 ```
@@ -198,7 +198,7 @@ mipt_db_hw2> mean_exec_time / 10000
 0.02
 ```
 
-```json
+```
 mipt_db_hw2> db.customers.dropIndex("Age_1")
 { nIndexesWas: 2, ok: 1 }
 ```
@@ -222,7 +222,7 @@ mipt_db_hw2> mean_exec_time / 5
 8399.2
 ```
 С индексацией:
-```json
+```
 mipt_db_hw2> db.uber.createIndex({Date : 1})
 Date_1
 ```
